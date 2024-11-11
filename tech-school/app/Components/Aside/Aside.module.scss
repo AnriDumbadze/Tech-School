@@ -1,0 +1,53 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 241px;
+  border-right: 1px solid #3b3b3b;
+  background: #1a1a1a;
+  height: 100vh;
+  padding: 24px 16px;
+}
+
+.siderContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lightDarkContainer {
+  margin-top: auto; // Pushes LightDark to the bottom
+}
+
+.darkAside {
+  background-color: #151515;
+}
+
+@media (max-width: 768px) {
+  .aside {
+    position: relative; // Reset for mobile view
+    display: flex;
+    flex-direction: row;
+    height: 82px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightDarkContainer {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+  }
+}

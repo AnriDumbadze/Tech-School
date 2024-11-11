@@ -1,0 +1,33 @@
+@import '../colors/Colors.scss';
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 16px;
+
+  .menuText {
+    margin-left: 10px;
+    color: #8F93A3;
+    transition: color 0.3s;
+  }
+
+  .icon {
+    transition: color 0.3s;
+  }
+
+  // Active state styling
+  &.active {
+    background: rgba(140, 205, 1, 0.15);
+
+    .menuText {
+      color: #8CCD01;
+    }
+
+    
+  }
+
+
+}
